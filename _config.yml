@@ -1,7 +1,7 @@
 theme: 
   minima
 minima:
-  skin: dark	
+  skin: solarized-dark	
 plugins:
   - jekyll-relative-links
 relative_links:
