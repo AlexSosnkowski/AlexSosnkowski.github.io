@@ -1,4 +1,4 @@
 ---
-parent: Home
+parent: Projects
 ---
 #Principle Component Analysis
