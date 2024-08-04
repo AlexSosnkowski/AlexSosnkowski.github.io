@@ -19,10 +19,10 @@ include:
 author:
   name: Alexander Sosnkowski
   email: "alexsosnkowski@gmail.com"
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
+#titles_from_headings:
+  #enabled:     true
+  #strip_title: true
+  #collections: true
 header_pages:
   - title: Home
     url: /
