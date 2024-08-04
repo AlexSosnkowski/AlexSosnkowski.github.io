@@ -31,4 +31,4 @@ header_pages:
   - title: Home
     url: /
   - title: Projects
-    url: /projects/projects.md
+    url: ./projects/projects.md
