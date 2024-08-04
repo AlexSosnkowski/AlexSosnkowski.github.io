@@ -31,3 +31,5 @@ titles_from_headings:
 #    url: ./projects/projects.md
 #  - title: Test
 #    url: /test.md
+header_pages:
+  - projects.md
