@@ -35,3 +35,6 @@ defaults:
       type: post
     values:
       tags: Other
+
+header_pages:
+  - projects.md
