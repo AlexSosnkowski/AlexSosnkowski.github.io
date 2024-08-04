@@ -20,7 +20,7 @@ author:
   name: Alexander Sosnkowski
   email: "alexsosnkowski@gmail.com"
 header_pages:
-  - projects.md
+  - projects/projects.md
 titles_from_headings:
   enabled:     true
   strip_title: true
