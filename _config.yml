@@ -1,4 +1,6 @@
-remote_theme: daattali/beautiful-jekyll
+remote_theme: jekyll/minima
+minima:
+  skin: classic
 include:
   - CONTRIBUTING.md
   - README.md
@@ -33,13 +35,3 @@ defaults:
       type: post
     values:
       tags: Other
-
-header_pages:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects/projects
-  - title: Test
-    url: /test
-#header_pages:
-#  - projects.md
