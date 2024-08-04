@@ -23,9 +23,6 @@ titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
-defaults:
-    values:
-      navigation: true
 header_pages:
   - Projects
   - title: Home
