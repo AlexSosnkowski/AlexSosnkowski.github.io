@@ -1,4 +1,6 @@
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: jekyll/minima
+minima:
+  skin: classic
 include:
   - CONTRIBUTING.md
   - README.md
@@ -19,9 +21,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-titles-from-headings
-#relative_links:
-  #enabled: true
-  #collections: true
+relative_links:
+  enabled: true
+  collections: true
 
 titles_from_headings:
   strip_title: true
