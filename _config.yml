@@ -1,6 +1,4 @@
-remote_theme: jekyll/minima
-minima:
-  skin: solarized-light
+remote_theme: daattali/beautiful-jekyll
 include:
   - CONTRIBUTING.md
   - README.md
