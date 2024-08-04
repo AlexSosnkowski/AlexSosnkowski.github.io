@@ -1,6 +1,6 @@
 remote_theme: jekyll/minima
 minima:
-  skin: solarized-dark
+  skin: solarized
 plugins:
   - jekyll-relative-links
   - jekyll-titles-from-headings
@@ -21,7 +21,6 @@ author:
   email: "alexsosnkowski@gmail.com"
 header_pages:
   - projects.md
-  - travels.md
 titles_from_headings:
   enabled:     true
   strip_title: true
