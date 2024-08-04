@@ -35,12 +35,13 @@ defaults:
       type: post
     values:
       tags: Other
-#header_pages:
-#  - title: Home
-#    url: /
-#  - title: Projects
-#    url: ./projects/projects.md
-#  - title: Test
-#    url: /test.md
+
+header_pages:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/projects
+  - title: Test
+    url: /test
 #header_pages:
 #  - projects.md

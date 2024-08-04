@@ -1,4 +1,5 @@
 ---
-parent: Home
+title: Projects
+has_children: false
 ---
-#Density Estimation using Autoregressive Flow
+# Density Estimation using Autoregressive Flow
