@@ -1,12 +1,6 @@
 remote_theme: jekyll/minima
 minima:
   skin: solarized-light
-plugins:
-  - jekyll-relative-links
-  - jekyll-titles-from-headings
-relative_links:
-  enabled: true
-  collections: true
 include:
   - CONTRIBUTING.md
   - README.md
@@ -19,9 +13,17 @@ include:
 author:
   name: Alexander Sosnkowski
   email: "alexsosnkowski@gmail.com"
+#########################################################################################
+##################################### Other Settings ####################################
+#########################################################################################
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+#relative_links:
+  #enabled: true
+  #collections: true
 
 titles_from_headings:
   strip_title: true
