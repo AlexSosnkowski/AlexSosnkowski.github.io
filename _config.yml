@@ -23,11 +23,11 @@ titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
-header_pages:
-  - Projects
-  - title: Home
-    url: /
-  - title: Projects
-    url: ./projects/projects.md
-  - title: Test
-    url: /test.md
+#header_pages:
+#  - Projects
+#  - title: Home
+#    url: /
+#  - title: Projects
+#    url: ./projects/projects.md
+#  - title: Test
+#    url: /test.md
