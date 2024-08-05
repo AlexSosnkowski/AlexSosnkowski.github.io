@@ -33,7 +33,3 @@ author:
 #      type: post
 #    values:
 #      tags: Other
-
-header_pages:
-
-  - test.md
