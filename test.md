@@ -1,6 +1,6 @@
 ---
 title: Testing
-has_children: true
+permalink: /test
 ---
 # My Test
 
