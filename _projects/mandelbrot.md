@@ -1,4 +1,4 @@
 ---
-parent: Home
+title: Mandelbrot
 ---
 #Mandelbrot

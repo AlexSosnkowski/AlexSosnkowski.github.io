@@ -16,3 +16,7 @@ author:
 header_pages:
   - index.md
   - test.md
+  - projects.md
+
+collections:
+  - projects
