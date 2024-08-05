@@ -1,6 +1,4 @@
-remote_theme: jekyll/minima
-minima:
-  skin: classic
+remote_theme: minimal-mistakes-jekyll
 include:
   - CONTRIBUTING.md
   - README.md
