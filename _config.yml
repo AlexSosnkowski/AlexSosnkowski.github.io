@@ -14,25 +14,25 @@ author:
 #########################################################################################
 ##################################### Other Settings ####################################
 #########################################################################################
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-relative-links
-  - jekyll-titles-from-headings
-relative_links:
-  enabled: true
-  collections: true
+#plugins:
+  #- jekyll-feed
+  #- jekyll-sitemap
+  #- jekyll-relative-links
+  #- jekyll-titles-from-headings
+#relative_links:
+  #enabled: true
+  #collections: true
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+#titles_from_headings:
+  #strip_title: true
+  #collections: true
 
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+#defaults:
+#  - scope:
+#      path: ""
+#      type: post
+#    values:
+#      tags: Other
 
 header_pages:
 
