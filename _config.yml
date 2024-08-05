@@ -1,5 +1,5 @@
 remote_theme: jekyll/minima
-skin: classic
+  skin: classic
 include:
   - CONTRIBUTING.md
   - README.md
@@ -12,6 +12,6 @@ include:
 author:
   name: Alexander Sosnkowski
   email: "alexsosnkowski@gmail.com"
-header-pages:
+header_pages:
   - index.md
   - test.md
