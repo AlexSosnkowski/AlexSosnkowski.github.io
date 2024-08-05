@@ -1,4 +1,4 @@
-remote_theme: minimal-mistakes-jekyll
+#remote_theme: minimal-mistakes-jekyll
 include:
   - CONTRIBUTING.md
   - README.md
@@ -35,4 +35,5 @@ defaults:
       tags: Other
 
 header_pages:
+
   - test.md
