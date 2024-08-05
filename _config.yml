@@ -21,3 +21,7 @@ header_pages:
 
 collections:
   - projects
+
+collections:
+  projects:
+    output: true
