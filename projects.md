@@ -9,7 +9,6 @@ title: Projects
     }
 
     .project {
-        height: 10vh;
         padding: 2%;
     }
 
