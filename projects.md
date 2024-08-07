@@ -29,7 +29,7 @@ title: Projects
     }
 
     .blurb {
-        padding: 2%;
+        padding-left: 2%;
         flex: 2;
     }
 
@@ -51,6 +51,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
             </div>
         
         </div>
+        <hr width="50%" />
     {% endfor %}
 
 </div>
