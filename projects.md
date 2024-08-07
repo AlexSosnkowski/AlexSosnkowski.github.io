@@ -32,8 +32,9 @@ title: Projects
     }
 
     .blurb {
+        width: 25vw;
+        height: 25vh;
         padding-left: 5%;
-
         flex: 2;
     }
 
