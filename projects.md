@@ -11,7 +11,6 @@ title: Projects
 
     .project {
         display: flex;
-        padding: 4%;
     }
 
     .project p{
@@ -56,7 +55,6 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
                 <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
                 <p>{{ project.blurb }}</p>
             </div>
-        
         </div>
     {% endfor %}
 
