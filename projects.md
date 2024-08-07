@@ -2,12 +2,12 @@
 title: Projects
 ---
 <style>
-    .post {
-        width: 10vh;
+    .project {
+        height: 10vh;
         padding: 2%;
         border-radius: 3%;
         border-style: solid;
-        border-color: orange;
+        border-color: darkblue;
     }
 </style>
 # My Projects
@@ -16,7 +16,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
 
 {% for project in site.projects %}
 
-<div class="post">
+<div class="project">
 
 <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
 
