@@ -31,13 +31,13 @@ title: Projects
         width: 100%;
         height: 100%;
         padding: 1%;
-        object-fit: cover;
+        
     }
 
     .blurb {
         width: 50%;
         height: 50%;
-        ;
+        padding-left: 5%;
         flex: 2;
     }
 
