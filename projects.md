@@ -28,6 +28,8 @@ title: Projects
     
     .thumbnail img {
         object-fit: cover;
+        width: 98%;
+        height: 98%;
     }
 
     .blurb {
