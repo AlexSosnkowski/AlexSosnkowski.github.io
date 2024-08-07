@@ -21,6 +21,8 @@ title: Projects
     .thumbnail {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
+        width: 25vw;
+        height: 25vh;
 
     }
     
@@ -37,9 +39,9 @@ title: Projects
 
     .divider {
         color: white;
-        height: 0px;
+        border-color: grey;
+        height: 1vh;
         width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
         border-style: inset;
         border-radius: 5px;
     }
