@@ -24,6 +24,7 @@ title: Projects
         width: 50%;
         height: 50%;
         border-radius: 2%;
+        padding: 2%;
     }
     
     .thumbnail img {
