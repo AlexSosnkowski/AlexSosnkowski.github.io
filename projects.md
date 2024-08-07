@@ -12,6 +12,8 @@ title: Projects
     .project {
         display: flex;
         padding: 4%;
+        width: 30vw;
+        height: 30vh;
     }
 
     .thumbnail {
@@ -35,8 +37,14 @@ title: Projects
         flex: 2;
     }
 
+    .divider {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 0%;
+
+    }
+
 </style>
-# My Projects
 
 Below are some projects I have worked on during my time studying at UVA. Some where created as part of assignments while others were made simply for fun!
 
@@ -53,7 +61,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
             </div>
         
         </div>
-        <hr width="100%" />
+        <hr class="divider" />
     {% endfor %}
 
 </div>
