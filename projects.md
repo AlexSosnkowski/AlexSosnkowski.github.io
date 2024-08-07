@@ -3,7 +3,11 @@ title: Projects
 ---
 <style>
     .post {
-
+        width: 10vh;
+        padding: 2%;
+        border-radius: 3%;
+        border-style: solid;
+        border-color: orange;
     }
 </style>
 # My Projects
