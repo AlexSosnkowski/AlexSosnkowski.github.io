@@ -15,14 +15,15 @@ title: Projects
     }
 
     .thumbnail {
-        box-shadow: 2vh 2vw;
+        padding: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
     }
     
     .thumbnail img {
         object-fit: cover;
-        width: 20vh;
-        height: 20vw;
+        width: 15vh;
+        height: 15vw;
     }
 
     .blurb {
@@ -39,7 +40,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
 
         <div class="project">
             <div class="thumbnail">
-                <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+                <img src="/projects/{{ project.thumbnail }}" alt="{{ project.title }}">
             </div>
             <div class="blurb">
                 <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>

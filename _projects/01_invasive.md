@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Invasive Species Distribution Modelling
-thumbnail: ./projects/invasive/thumbnail.png
-blurb: How can we combat invasive species with machine learning techniques?
+thumbnail: /invasive/thumbnail.png
+blurb: "How can we combat invasive species with machine learning techniques?"
 ---
 
 Disclaimer: This project originated from an end of year project in my college machine learning class. We were tasked with using the machine learning techniques we had been taught to solve a local problem. The results our group came to are detailed below, however, all of the code and graphics discussed or shown in this post were created by myself.  
@@ -25,11 +25,11 @@ The remaining issue is that of spatial bias. Due to the nature of how observatio
 
 After testing numerous models and techniques using 5 fold cross validation, we settled on a soft voting classifier (the "soft" aspect is key as it allows us to retrieve probabilities for our predictions rather than a binary classification of 0 or 1) that used six models: Support Vector Classifier, RandomForest Classifier, kNearestNeighbor, AdaBoost Classifier, XGBClassifier, and a LogisticRegression classifier. The model architecture is depicted below.
 
-<img src="./invasive/classifier.png" width=400>
+<img src="/invasive/classifier.png" width=400>
 
 Many machine learning models suffer a lack of interpretability (our ability to understand why they reach a particular result) in how they make their predictions. This can reduce our confidence in their ability to find meaningful, generalizable patterns in data. While it isn't easily possible to interpret all of the models we used (such as XGBClassifier), we can further analyze our random forest model (which preformed fairly well on its own) since it is a type of decision tree (which are some of the most interpretable kinds of models). To do this, we can rank the mean decrease in impurity (a metric for how class mixed the dataset is before and after a decision split) for each feature across all of the trees in our random forest. The particular example shown below is from a random forest classifier trained on our Autumn Olive dataset.
 
-<img src="./invasive/featureimportance.png" width=400>
+<img src="/invasive/featureimportance.png" width=400>
 
 From this result, we can see some of the most important environmental variables are temperature and water vapor related.
 
@@ -46,7 +46,7 @@ points difficult for the models).
 
 While we can query particular points in Virginia and determine if the conditions at that point are favorable for a particular invasive species, a more useful result may be a state wide made. To create this, we start with a grid of equally distributed points across Virginia and use the same data collection algorithm from our training step to gather environmental information about each point. We then took the predicted probabilities from our model and graphed them with darker color tones representing a higher numerical value. These are layered on top of a gray background for Virginia to aid in visibility and are shown below. 
 
-<img src="./invasive/autumnmap.png" width=200 height=180> <img src="./invasive/stiltgrassmap.png" width=200 height=180> <img src="./invasive/treemap.png" width=200 height=180>
+<img src="/invasive/autumnmap.png" width=200 height=180> <img src="/invasive/stiltgrassmap.png" width=200 height=180> <img src="/invasive/treemap.png" width=200 height=180>
 
 
 Smaller, more targeted maps for specific state parks could be made using our model by adjusting the scale and longitude, latitude bounds of the collected points. 
