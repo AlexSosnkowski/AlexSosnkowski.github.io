@@ -12,7 +12,10 @@ title: Projects
     .project {
         display: flex;
         padding: 4%;
+    }
 
+    .project p{
+        font-size: small;
     }
 
     .thumbnail {
@@ -23,19 +26,19 @@ title: Projects
     
     .thumbnail img {
         object-fit: cover;
+        border-radius: 2%;
     }
 
     .blurb {
-        padding-left: 2%;
+        padding-left: 5%;
 
         flex: 2;
     }
 
     .divider {
-        width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         height: 1px;
-
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     }
 
 </style>
@@ -50,7 +53,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
                 <img src="/projects/{{ project.thumbnail }}" alt="{{ project.title }}">
             </div>
             <div class="blurb">
-                <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+                <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
                 <p>{{ project.excerpt }}</p>
             </div>
         
