@@ -27,9 +27,8 @@ title: Projects
     }
     
     .thumbnail img {
+        padding: 1%;
         object-fit: cover;
-        width: 98%;
-        height: 98%;
     }
 
     .blurb {
