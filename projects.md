@@ -2,6 +2,7 @@
 title: Projects
 ---
 <style>
+
     .project-container {
         display: flex;
         flex-wrap: wrap;
@@ -9,13 +10,19 @@ title: Projects
     }
 
     .project {
+        display: flex;
         padding: 2%;
     }
 
-    .project img {
+    .thumbnail {
+        flex: 1;
         border-radius: 3%;
         border-style: solid;
         border-color: darkblue;
+    }
+
+    .blurb {
+        flex: 2;
     }
 
 </style>
@@ -24,16 +31,18 @@ title: Projects
 Below are some projects I have worked on during my time studying at UVA. Some where created as part of assignments while others were made simply for fun!
 
 <div class="project-container">
-{% for project in site.projects %}
+    {% for project in site.projects %}
 
-<div class="project">
+        <div class="project">
+            <div class="thumbnail">
+                <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+            </div>
+            <div class="blurb">
+                <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+                <p>{{ project.excerpt }}</p>
+            </div>
+        </div>
 
-<img src="{{ project.thumbnail }}" alt="{{ project.title }}">
-
-<h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-
-</div>
-
-{% endfor %}
+    {% endfor %}
 
 </div>
