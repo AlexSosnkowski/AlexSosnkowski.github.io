@@ -14,7 +14,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
 
 <div class="post">
 
-<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+<img src="{{ project.thumbnail }}" alt="{{ project.title }}">
 
 <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
 
