@@ -21,8 +21,8 @@ title: Projects
     .thumbnail {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
-        width: 25vw;
-        height: 25vh;
+        width: 25%;
+        height: 25%;
         border-radius: 2%;
     }
     
@@ -32,8 +32,8 @@ title: Projects
     }
 
     .blurb {
-        width: 25vw;
-        height: 25vh;
+        width: 25%;
+        height: 25%;
         padding-left: 5%;
         flex: 2;
     }
