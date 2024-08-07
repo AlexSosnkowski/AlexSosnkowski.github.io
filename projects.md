@@ -23,12 +23,11 @@ title: Projects
         flex: 1;
         width: 25vw;
         height: 25vh;
-
+        border-radius: 2%;
     }
     
     .thumbnail img {
         object-fit: cover;
-        border-radius: 2%;
     }
 
     .blurb {
