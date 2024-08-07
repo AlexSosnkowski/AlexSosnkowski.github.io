@@ -11,6 +11,7 @@ title: Projects
 
     .project {
         display: flex;
+        padding: 4%;
     }
 
     .project p{
@@ -36,7 +37,7 @@ title: Projects
     .blurb {
         width: 50%;
         height: 50%;
-        padding-left: 5%;
+        ;
         flex: 2;
     }
 
