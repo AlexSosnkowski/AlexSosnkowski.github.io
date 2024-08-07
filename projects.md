@@ -22,8 +22,6 @@ title: Projects
     
     .thumbnail img {
         object-fit: cover;
-        width: 15vh;
-        height: 15vw;
     }
 
     .blurb {
