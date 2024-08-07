@@ -29,8 +29,7 @@ title: Projects
     
     .thumbnail img {
         width: 100%;
-        height: auto;
-        border-bottom: 1px solid #ddd;
+        height: 100%;
         object-fit: cover;
     }
 
