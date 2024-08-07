@@ -11,11 +11,10 @@ title: Projects
 
     .project {
         display: flex;
-        padding: 5%;
+        padding: 4%;
     }
 
     .thumbnail {
-        padding: 10%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
     }
@@ -25,6 +24,7 @@ title: Projects
     }
 
     .blurb {
+        padding: 2%;
         flex: 2;
     }
 
@@ -45,7 +45,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
                 <p>{{ project.excerpt }}</p>
             </div>
         </div>
-
+        <hr>
     {% endfor %}
 
 </div>
