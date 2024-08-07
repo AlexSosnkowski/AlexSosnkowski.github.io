@@ -15,10 +15,14 @@ title: Projects
     }
 
     .thumbnail {
+        box-shadow: 2vh 2vw;
         flex: 1;
-        border-radius: 3%;
-        border-style: solid;
-        border-color: darkblue;
+    }
+    
+    .thumbnail img {
+        object-fit: cover;
+        width: 20vh;
+        height: 20vw;
     }
 
     .blurb {
