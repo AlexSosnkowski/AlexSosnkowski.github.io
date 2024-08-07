@@ -17,6 +17,8 @@ title: Projects
     .thumbnail {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
+        width: 15%;
+        height: 15%;
     }
     
     .thumbnail img {
@@ -44,8 +46,8 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
                 <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
                 <p>{{ project.excerpt }}</p>
             </div>
-        </div>
         <hr>
+        </div>
     {% endfor %}
 
 </div>
