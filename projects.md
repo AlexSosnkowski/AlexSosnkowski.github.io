@@ -15,13 +15,13 @@ title: Projects
     }
 
     .thumbnail {
-        padding: 5%;
+        padding: 10%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex: 1;
     }
     
     .thumbnail img {
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .blurb {
