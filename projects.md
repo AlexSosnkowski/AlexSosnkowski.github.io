@@ -36,9 +36,11 @@ title: Projects
     }
 
     .divider {
-        height: 1px;
+        height: 0px;
         width: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+        border-style: inset;
+        border-radius: 2%;
     }
 
 </style>
@@ -54,7 +56,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
             </div>
             <div class="blurb">
                 <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
-                <p>{{ project.excerpt }}</p>
+                <p>{{ project.blurb }}</p>
             </div>
         
         </div>
