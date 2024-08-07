@@ -1,16 +1,23 @@
 ---
 title: Projects
 ---
+<style>
+    .post {
+
+    }
+</style>
 # My Projects
 
 Below are some projects I have worked on during my time studying at UVA. Some where created as part of assignments while others were made simply for fun!
 
 {% for project in site.projects %}
 
-<ul>
+<div class="post">
 
-<li><h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3></li>
+<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
 
-</ul>
+<h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+
+</div>
 
 {% endfor %}

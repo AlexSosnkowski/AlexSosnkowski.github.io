@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Invasive Species Distribution Modelling
+thumbnail: ./invasive/thumbnail.png
 ---
 
 Disclaimer: This project originated from an end of year project in my college machine learning class. We were tasked with using the machine learning techniques we had been taught to solve a local problem. The results our group came to are detailed below, however, all of the code and graphics discussed or shown in this post were created by myself.  
