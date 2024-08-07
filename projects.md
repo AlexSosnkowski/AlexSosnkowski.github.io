@@ -37,15 +37,6 @@ title: Projects
         flex: 2;
     }
 
-    .divider {
-        color: white;
-        border-color: grey;
-        height: 1vh;
-        width: 100%;
-        border-style: inset;
-        border-radius: 5px;
-    }
-
 </style>
 
 Below are some projects I have worked on during my time studying at UVA. Some where created as part of assignments while others were made simply for fun!
@@ -63,7 +54,6 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
             </div>
         
         </div>
-        <hr class="divider" />
     {% endfor %}
 
 </div>
