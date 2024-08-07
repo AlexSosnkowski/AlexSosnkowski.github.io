@@ -23,6 +23,9 @@ title: Projects
     
     .thumbnail img {
         object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .blurb {
@@ -46,7 +49,7 @@ Below are some projects I have worked on during my time studying at UVA. Some wh
                 <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
                 <p>{{ project.excerpt }}</p>
             </div>
-        <hr>
+        
         </div>
     {% endfor %}
 
