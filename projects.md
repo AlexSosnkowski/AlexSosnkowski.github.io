@@ -12,6 +12,9 @@ title: Projects
     .project {
         display: flex;
         padding: 4%;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+        background-color: #f9f9f9;
+        border-radius: 1vh;
     }
 
     .project p{
@@ -37,6 +40,7 @@ title: Projects
         width: 50%;
         height: 50%;
         padding-left: 5%;
+        padding-bottom; 5%;
         flex: 2;
     }
 
