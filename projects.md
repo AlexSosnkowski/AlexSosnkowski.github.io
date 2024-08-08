@@ -29,6 +29,7 @@ title: Projects
         height: 100%;
         justify-content: center;
         align-items: center;
+        flex-shrink: 1;
     }
     
     .thumbnail img {
@@ -47,6 +48,7 @@ title: Projects
         flex: 2;
         justify-content: center;
         align-items: center;
+        flex-shrink: 1;
     }
 
 </style>
