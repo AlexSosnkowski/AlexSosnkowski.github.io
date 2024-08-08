@@ -17,6 +17,8 @@ title: Projects
         border-radius: 1vh;
         width: 100%;
         height: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .project p{
@@ -29,7 +31,6 @@ title: Projects
         height: 100%;
         justify-content: center;
         align-items: center;
-        flex-shrink: 1;
     }
     
     .thumbnail img {
@@ -48,7 +49,6 @@ title: Projects
         flex: 2;
         justify-content: center;
         align-items: center;
-        flex-shrink: 1;
     }
 
 </style>
