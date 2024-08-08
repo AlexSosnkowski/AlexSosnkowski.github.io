@@ -15,8 +15,8 @@ title: Projects
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
         background-color: #f9f9f9;
         border-radius: 1vh;
-        width: 25vh;
-        height: 25vw;
+        width: 50vh;
+        height: 50vh;
     }
 
     .project p{
