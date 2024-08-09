@@ -7,6 +7,9 @@ blurb: To better understand the Mandelbrot set, I created a program to .
 <style>
 .round {
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box{
