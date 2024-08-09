@@ -5,6 +5,7 @@ thumbnail: /mandelbrot/thumbnail.png
 blurb: To better understand the Mandelbrot set, I created a program to .
 ---
 <style>
+
 .round {
     border-radius: 50%;
     display: block;
@@ -33,7 +34,7 @@ First, we should understand what the mandelbrot set is. Consider the very simple
 
 $f(x) = x^2+c$
 
-If we pick some value for c such as 3 and say we start x as 0, then we can plug our values into $f(x)$ and get $f(x) = 0^2 + 3 = 3$. Exciting stuff! More interestingly, what if we say instead of $x$ being 0, it is the previous value of $f(x)$ i.e 3. We would get $f(f(0)) = f(3) = 3^2 + 3 = 12$. This is called "iterating" a function and we can see if we continued to do this for $c = 3$ we would get a rapidly increasing value. When this value continues to grow off into infinity, we call that value as escaping. 
+If we pick some value for c such as 3 and say we start x as 0, then we can plug our values into $f(x)$ and get $f(x) = 0^2 + 3 = 3$. Exciting stuff! More interestingly, what if we say instead of $x$ being 0, it is the previous value of $f(x)$ i.e 3. We would get $f(f(0)) = f(3) = 3^2 + 3 = 12$. This is called "iterating" a function and we can see if we continued to do this for $c = 3$ we would get a rapidly increasing value. When this value continues to grow off into infinity, we say that value is escaping. 
 
 If we consider another example (starting at x=0 again), say $c = -1$ we get the following.
 
@@ -53,7 +54,11 @@ On the real number line, we find that the interval -2 to 1/4 contains all non-es
 
 ^ there it is, super boring 
 
-We can get much more interesting and complex (ba dum tss) results by moving to the complex plane. A complex number is a number $a + b \cdot i$ with two components, a real component $a$ and an imaginary component $b$ defined such that $i \cdot i = i^2 =  -1$. Using this one property, we can define complex multiplication as $(a_1+b_1i) \cdot (a_2 + b_2i) = a_1 \cdot a_2 + a_1 \cdot b_2 i + b_1i \cdot a_2 + b_1i \cdot b_2i = (a_1 \cdot a_2 - b_1 \cdot b_2) + (a_1 \cdot b_2 + b_1 \cdot a_2)i$. Much like a number line can be used to represent the "complete" range of real numbers, we can use a complex plain to represent the gambit of complex numbers where x is traditionally the real component and y is the complex component. Side note, imaginary numbers have lots of interesting meanings, including in representing rotations (for example, multiplying a complex number by i rotates it 90 degrees).
+We can get much more interesting and complex (ba dum tss) results by moving to the complex plane. A complex number is a number $a + b \cdot i$ with two components, a real component $a$ and an imaginary component $b$ defined such that $i \cdot i = i^2 =  -1$. Using this one property, we can define complex multiplication as 
+
+$(a_1+b_1i) \cdot (a_2 + b_2i) = a_1 \cdot a_2 + a_1 \cdot b_2 i + b_1i \cdot a_2 + b_1i \cdot b_2i = (a_1 \cdot a_2 - b_1 \cdot b_2) + (a_1 \cdot b_2 + b_1 \cdot a_2)i$
+
+ Much like a number line can be used to represent the "complete" range of real numbers, we can use a complex plain to represent the gambit of complex numbers where the x-axis is traditionally the real component and the y-axis is the complex component. Side note, imaginary numbers have lots of interesting meanings, including in representing rotations (for example, multiplying a complex number by i rotates it 90 degrees).
 
 In either case, we can now take a plane of complex values, and for each point (which corresponds to a pixel in our image) we can check wether that point escapes or fails to escape after a certain number of iterations (this method is called naive escape and is only an approximation, higher iteration counts yield better and better results). We color each point according to how long it took to escape a set boundary (we usually check wether our point is more than a distance of two away from the center of the plane since the set is bounded by 2). My program uses a simple linear gradient (for a given step size, we take one rgb point and linearly step towards a second rgb color) but more advanced coloring methods exist.
 
