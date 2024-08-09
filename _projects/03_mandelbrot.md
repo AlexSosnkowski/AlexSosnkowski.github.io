@@ -31,7 +31,7 @@ The Mandelbrot set is one of the most famous and commonly discussed fractals - i
 
 First, we should understand what the mandelbrot set is. Consider the very simple quadratic polynomial shown below.
 
-$f(x) = x^2+c$
+\\(f(x) = x^2+c\\)
 
 If we pick some value for c such as 3 and say we start x as 0, then we can plug our values into $f(x)$ and get $f(x) = 0^2 + 3 = 3$. Exciting stuff! More interestingly, what if we say instead of $x$ being 0, it is the previous value of $f(x)$ i.e 3. We would get $f(f(0)) = f(3) = 3^2 + 3 = 12$. This is called "iterating" a function and we can see if we continued to do this for $c = 3$ we would get a rapidly increasing value. When this value continues to grow off into infinity, we call that value as escaping. 
 
