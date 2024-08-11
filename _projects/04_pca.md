@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Principle Component Analysis
-thumbnail: thumbnail.png
+thumbnail: /pca/thumbnail.png
 blurb: Do you have extremely high dimensional data that you want to plot on a nice 2d or 3d graph? Than PCA might just be the solution for you!
 ---
 #Warning this article is a work in progress! Read at your own risk!
