@@ -4,7 +4,7 @@ title: Principle Component Analysis
 thumbnail: /pca/thumbnail.png
 blurb: Do you have extremely high dimensional data that you want to plot on a nice 2d or 3d graph? Than PCA might just be the solution for you!
 ---
-#Warning this article is a work in progress! Read at your own risk!
+# Warning this article is a work in progress! Read at your own risk!
 
 A while back I was reading an interesting paper ([this](https://arxiv.org/pdf/2310.06824) one), and its usage of Principle Component Analysis or PCA intrigued me. It was the first time I have ever heard of the technique, so I went about learning more the only way I know how - by searching the web! 
 
