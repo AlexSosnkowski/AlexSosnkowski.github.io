@@ -1,7 +1,6 @@
 ---
 title: Home
 ---
-# Welcome!
 
 <style>
     .profile {
