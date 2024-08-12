@@ -16,7 +16,7 @@ title: Home
 
     hr {
         margin: 5% 0;
-        height: 0.5vh;
+        height: 2px;
         background-color: none;
         box-shadow: 
        		inset 0px 1px 1px rgba(0, 0, 0, 0.12),
