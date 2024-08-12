@@ -14,6 +14,17 @@ title: Home
         overflow: hidden;
     }
 
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #ddd;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24),
+            inset 0 1px 1px rgba(255, 255, 255, 0.8),
+            inset 0 -1px 1px rgba(0, 0, 0, 0.05);
+        margin: 20px 0;
+    }
+
 </style>
 
 <img src="profile.png" class="profile">
