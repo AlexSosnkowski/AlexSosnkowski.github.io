@@ -97,3 +97,7 @@ My code is available for viewing and download via the github repository found [h
 
 ## Useful References
 
+[https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
+
+[https://realpython.com/mandelbrot-set-python/](https://realpython.com/mandelbrot-set-python/)
+
