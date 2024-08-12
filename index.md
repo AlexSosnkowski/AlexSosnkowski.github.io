@@ -11,7 +11,34 @@ title: Home
         margin-left: auto;
         margin-right: auto;
         box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+        overflow: <style>
+    .profile {
+        border-radius: 100%;
+        width: 20%;
+        height: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
         overflow: hidden;
+    }
+
+    hr {
+        border: none;
+        margin: 5% 0;
+        height: 0.5%;
+        background-color: none;
+        box-shadow: 
+       		inset 0px 1px 1px rgba(0, 0, 0, 0.12),
+            inset 0px -1px 1px rgba(0, 0, 0, 0.24),
+            inset 0px 1px 1px rgba(255, 255, 255, 0.8),
+            inset 0px -1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+</style>
+
+<img src="profile.png" class="profile">
+<hr>hidden;
     }
 
     hr {
