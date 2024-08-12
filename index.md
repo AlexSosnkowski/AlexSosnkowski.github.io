@@ -23,4 +23,4 @@ My name is Alexander Sosnkowski and I am a rising fourth year student at UVA wit
 
 ## Contact 
 
-Email: alexsosnkowski@gmail.com 
+Email: [alexsosnkowski@gmail.com](mailto:alexsosnkowski@gmail.com)
