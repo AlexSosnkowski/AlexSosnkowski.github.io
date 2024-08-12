@@ -15,8 +15,9 @@ title: Home
     }
 
     hr {
+        border: none;
         margin: 5% 0;
-        height: 2px;
+        height: 1px;
         background-color: none;
         box-shadow: 
        		inset 0px 1px 1px rgba(0, 0, 0, 0.12),
