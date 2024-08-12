@@ -24,3 +24,6 @@ collections:
 collections:
   projects:
     output: true
+
+site:
+  description: Thank you for your time!
