@@ -2,7 +2,7 @@
 layout: page
 title: Mandelbrot
 thumbnail: /mandelbrot/thumbnail.png
-blurb: To better understand the Mandelbrot set, I created a program to .
+blurb: To better understand the Mandelbrot set, I created a program to explore it and generate high resolution screenshots of specific sections. Let's explore the math behind these stunning photos!
 ---
 <style>
 
