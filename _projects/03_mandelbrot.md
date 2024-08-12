@@ -7,7 +7,7 @@ blurb: To better understand the Mandelbrot set, I created a program to explore i
 <style>
 
 .round {
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
