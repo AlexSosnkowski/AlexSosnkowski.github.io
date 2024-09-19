@@ -42,7 +42,7 @@ RAG is an excellent tool for giving LLMs the context information they need to an
 
 Having a web app that can be hosted locally is great for initial development, however, at some point it needs to be made available via the internet. I found that one of the quickest ways for small to medium size projects is to set up a Digital Ocean's droplet and run critical processes (like NodeJS) with nohup (a command that ensures the process remains running in the background even after your ssh session ends). Nginx can be setup to forward the port your app is running on to an internet accessible port.
 
-Many other techniques exist .
+Many other techniques exist to augment the power of LLMs for specific applications. A particularly powerful one is found in providing "tools" to the LLM agent. These come in the form of pre-set commands that the LLM can invoke that act similarly to a function invocation in a normal program. For example, the LLM can be instructed in it's prompt that it has an addition tool, so when it outputs ADD(Num_1, Num_2), that text will be removed and replaced with the sum of Num_1 and Num_2. Tools like LangChain can be used to develop and manage these tool chains. 
 
 Code for this project can be found on [here](https://github.com/AlexSosnkowski/chatbot).
 
