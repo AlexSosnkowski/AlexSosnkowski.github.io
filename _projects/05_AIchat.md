@@ -16,7 +16,7 @@ In essence, we maintain some bank of information tidbits. For every user query, 
 
 A vector database is similar to any SQL database (in fact, many are some form of SQL database on the backend) except that they contain high dimensional (usually thousands of dimensions) embeddings for the text they store. Text embeddings are a way of representing text as a large vector or list of numbers (usually obtained from a neural network). We can intuitively think of each dimension as encoding how far the text is on some "axis". A simple example might be a dimension that represents heat - so text surrounding something hot would have a large value in this dimension and vice versa. In reality, it is often not intuitive what exactly these dimensions represent, however, they capture a semantic understanding of the text in a mathematical structure that is capable of being concretely compared to other embeddings (using vector distance metrics).
 
-For my system, I used ChromaDB with OpenAI's Ada002 embeddings and a cosine similarity metric. Text in the form of ideal question, answer pairs can be added to the vector database through a command line Python tool that accepts either a csv file format or directory of text files each storing a q&a pair.  
+For my system, I used ChromaDB with OpenAI's Ada002 embeddings and a cosine similarity metric. Text in the form of ideal question, answer pairs can be added to the vector database through a command line Python tool that accepts either a csv file format or directory of text files each storing a q&a pair. A similar technique could be used on collections of documents instead by encoding each document in small, paragraph or so chunks.   
 
 <img src="./AIchat/cml.png">
 
@@ -30,12 +30,15 @@ But what about user questions that don't have a close match, we wouldn't want to
 <img src="./AIchat/slack.png">
 <img src="./AIchat/sheet.png">
 
+Of note is that with this specific flow, the LLM can be completely removed and the closest matching answer from the database can be returned to the user instead. This can trade some of the uncertainty and risk of LLM generated responses with a loss of generality / custom tailored responses. This technique is called a semantic search and can be an excellent tool for more intuitively searching large text datasets.
 
 ## Fine Tunning
 
 RAG is an excellent tool for giving LLMs the context information they need to answer questions for which said context is either not publicly available, was not included in the initial training set, or is generated on the fly. If there is a specific format you would like LLM responses to take, however, another technique is required. Prompt engineering offers a quick and cheap option - the chatbot is simply given a prompt at the beginning of each conversation outlining how it should reply. A more substantial option is found in fine tunning - a process in which a new, small dataset is provided so that key layers of the LLM can be re-trained on it. Though fine tunning generally fails to retain specific information, it can successfully alter the form and manner of the LLM's responses as noted by OpenAI [here](https://platform.openai.com/docs/guides/fine-tuning/when-to-use-fine-tuning). 
 
 ## Video Demo
+Below is a brief video demo of the web app framework running locally. A few example, toy documents were added to the semantic database describing the habits of someone named "TEST". 
+
 <iframe src="https://youtube.com/embed/CecMuqo3Hy4" frameborder="0" allowfullscreen></iframe>​
 
 ## Going Further
@@ -45,7 +48,3 @@ Having a web app that can be hosted locally is great for initial development, ho
 Many other techniques exist to augment the power of LLMs for specific applications. A particularly powerful one is found in providing "tools" to the LLM agent. These come in the form of pre-set commands that the LLM can invoke that act similarly to a function invocation in a normal program. For example, the LLM can be instructed in it's prompt that it has an addition tool, so when it outputs ADD(Num_1, Num_2), that text will be removed and replaced with the sum of Num_1 and Num_2. Tools like LangChain can be used to develop and manage these tool chains. 
 
 Code for this project can be found on [here](https://github.com/AlexSosnkowski/chatbot).
-
-
-## Useful References
-
