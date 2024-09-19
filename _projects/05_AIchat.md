@@ -6,11 +6,11 @@ blurb: Let's Building a Framework for Retrieval Augmented Generative Chat Bots u
 ---
 ## The Setup
 
-Over the past summer, I was tasked with creating an AI chatbot web app as part of an internship. Due to the more sensitive nature of the chat bots intended audience, ensuring responses remained accurate and sensitive was of the utmost importance. Furthermore, the specific topic the chat bot served as resource for was outside the standard training set for LLMs. Thus, I needed to employ a variety of techniques to achieve a knowledgeable and reliable agent. This post outlines a more general framework for creating a chat system with these considerations in mind. 
+Over the past summer, I was tasked with creating an AI chatbot web app as part of an internship. Due to the more sensitive nature of the chat bots intended audience, ensuring responses remained accurate and sensitive was of the utmost importance. Furthermore, the specific topic the chat bot served as resource for was outside the standard training set for typical LLMs. Thus, I needed to employ a variety of techniques to achieve a knowledgeable and reliable agent. This post outlines a more general framework for creating a chat system with these considerations in mind. 
 
 ## The How
 
-Have you ever wondered how LLM agents can comment on events and information only released after the initial training dataset was collected? One quick and easy technique is called Retrieval Augmented Generation or RAG.
+Have you ever wondered how LLM agents can comment on events and information only released after the initial training dataset was collected? One quick and easy technique to achieve this is called Retrieval Augmented Generation or RAG.
 
 In essence, we maintain some bank of information tidbits. For every user query, we grab some of the most relevant material from our store and pass it in as context to our LLM. This information bank can take any number of forms. Web or wiki searches, other more specifically trained large language models, or in this case a vector database. 
 
@@ -41,6 +41,8 @@ RAG is an excellent tool for giving LLMs the context information they need to an
 ## Going Further
 
 Having a web app that can be hosted locally is great for initial development, however, at some point it needs to be made available via the internet. I found that one of the quickest ways for small to medium size projects is to set up a Digital Ocean's droplet and run critical processes (like NodeJS) with nohup (a command that ensures the process remains running in the background even after your ssh session ends). Nginx can be setup to forward the port your app is running on to an internet accessible port.
+
+Many other techniques exist .
 
 Code for this project can be found on [here](https://github.com/AlexSosnkowski/chatbot).
 
