@@ -22,7 +22,11 @@ For my system, I used ChromaDB with OpenAI's Ada002 embeddings and a cosine simi
 
 We can also attach metadata to entries of various data types. In our case, each entry can have an option video url attached so that users can receive not only a text-response, but an informative reference video relating to their question as well.
 
-This system gives us the following program flow. A user sends a query to the chatbot. The query is transformed into a text embedding that is then compared to every text embedding in the database. The most similar question and answer pair from our database can then be passed along as context to the LLM, and its response returned to the user. 
+This system gives us the following program flow. A user sends a query to the chatbot. The query is transformed into a text embedding that is then compared to every text embedding in the database. The most similar question and answer pair from our database can then be passed along as context to the LLM, and its response returned to the user.
+
+<img src="./AIchat/context.png">
+
+In the image above, we can see how context is passed on to the LLM (normally, this context is not shown to the users but I have edited the code to display it for demonstration purposes). As an example, toy documents were added to the semantic database describing the habits of someone named "TEST".  
 
 But what about user questions that don't have a close match, we wouldn't want to give the wrong context to the LLM as this could produce nonsensical results? For this reason, there is a similarly threshold that must be met in order for the user to receive a response. otherwise, an automated data collection system is initiated that allows the user to enter their email and receive a human response in the near future. My specific implementation can both add unanswered questions to a Google Sheet, or send them as notifications in a slack channel. 
 
@@ -37,7 +41,7 @@ Of note is that with this specific flow, the LLM can be completely removed and t
 RAG is an excellent tool for giving LLMs the context information they need to answer questions for which said context is either not publicly available, was not included in the initial training set, or is generated on the fly. If there is a specific format you would like LLM responses to take, however, another technique is required. Prompt engineering offers a quick and cheap option - the chatbot is simply given a prompt at the beginning of each conversation outlining how it should reply. A more substantial option is found in fine tunning - a process in which a new, small dataset is provided so that key layers of the LLM can be re-trained on it. Though fine tunning generally fails to retain specific information, it can successfully alter the form and manner of the LLM's responses as noted by OpenAI [here](https://platform.openai.com/docs/guides/fine-tuning/when-to-use-fine-tuning). 
 
 ## Video Demo
-Below is a brief video demo of the web app framework running locally. A few example, toy documents were added to the semantic database describing the habits of someone named "TEST". 
+Below is a brief video demo of the web app framework running locally.
 
 <iframe src="https://youtube.com/embed/CecMuqo3Hy4" frameborder="0" allowfullscreen></iframe>​
 
@@ -47,4 +51,4 @@ Having a web app that can be hosted locally is great for initial development, ho
 
 Many other techniques exist to augment the power of LLMs for specific applications. A particularly powerful one is found in providing "tools" to the LLM agent. These come in the form of pre-set commands that the LLM can invoke that act similarly to a function invocation in a normal program. For example, the LLM can be instructed in it's prompt that it has an addition tool, so when it outputs ADD(Num_1, Num_2), that text will be removed and replaced with the sum of Num_1 and Num_2. Tools like LangChain can be used to develop and manage these tool chains. 
 
-Code for this project can be found on [here](https://github.com/AlexSosnkowski/chatbot).
+Code for this project can be found [here](https://github.com/AlexSosnkowski/chatbot).
